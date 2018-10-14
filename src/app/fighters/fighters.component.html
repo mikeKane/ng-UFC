@@ -1,0 +1,23 @@
+<div class="fighters">
+  <ul>
+    <div class="fighter-grid" [class.champ]="fighter.title_holder == true">
+      <li *ngFor="let fighter of fighters$">
+        <div class="name" [class.champ]="fighter.title_holder == true">
+          {{fighter.first_name}} {{fighter.last_name}}
+        </div>
+        <div class="stats" [class.champ]="fighter.title_holder == true">
+          <div class="image">
+            <img src="{{fighter.thumbnail}}" alt="">
+          </div>
+          <div class="weight-class" [class.champ]="fighter.title_holder == true">
+          <p>{{fighter.weight_class}}</p>
+          <p>Record: {{fighter.wins}}-{{fighter.losses}}-{{fighter.draws}}</p>
+          </div>
+        </div>
+        <div class="details" [class.champ]="fighter.title_holder == true">
+          <a routerLink="/details/{{ fighter.id }}">View Detail</a>
+        </div>
+      </li>
+    </div>
+  </ul>
+</div>

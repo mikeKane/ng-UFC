@@ -1,16 +1,28 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
+import { DataComponent } from './data/data.component';
+import { FightersComponent } from './fighters/fighters.component';
+import { DetailsComponent } from './details/details.component';
+
+import { HttpClientModule } from '@angular/common/http';
+
+import {  }
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DataComponent,
+    FightersComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
