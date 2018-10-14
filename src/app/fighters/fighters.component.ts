@@ -9,10 +9,9 @@ import { Observable } from 'rxjs';
 })
 export class FightersComponent implements OnInit {
 
-  constructor(private data: DataService) {
+fighters$: Object;
 
-    fighters$: Object;
-  }
+  constructor(private data: DataService) {}
 
   ngOnInit() {
     this.data.getFighters().subscribe(

@@ -4,18 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { DataComponent } from './data/data.component';
+
 import { FightersComponent } from './fighters/fighters.component';
 import { DetailsComponent } from './details/details.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
-import {  }
-
 @NgModule({
   declarations: [
     AppComponent,
-    DataComponent,
     FightersComponent,
     DetailsComponent
   ],
@@ -27,4 +24,4 @@ import {  }
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
