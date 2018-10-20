@@ -6,7 +6,7 @@
 .fighter-grid {
   display: grid;
   // grid-template-columns: 25% 25% auto;
-   grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
+   grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
 }
 
 .champ {
@@ -15,7 +15,16 @@
 
 ul li:hover {
   background-color: #red;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.7);
+}
+
+ul li:hover .name {
+  font-size: 35px;
+}
+
+ul li:hover .image {
+  background-color: #red;
+  box-shadow: 0px 0px 5px 5px rgba(255, 0, 0, 0.7);
 }
 
 .fighter-grid > li {
@@ -50,7 +59,7 @@ ul li:hover {
 
 .image {
   margin-top: 10px;
-  margin-left: 5px;
+  margin-left: 20px;
   box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, .4);
 }
 
