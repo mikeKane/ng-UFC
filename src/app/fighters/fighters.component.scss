@@ -4,7 +4,8 @@
 
 .fighter-grid {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  // grid-template-columns: 25% 25% auto;
+   grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
 }
 
 .champ {
